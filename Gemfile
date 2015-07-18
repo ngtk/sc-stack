@@ -12,6 +12,11 @@ gem 'turbolinks'
 gem 'twitter-bootswatch-rails', '~> 3.1.1'
 gem 'twitter-bootswatch-rails-helpers'
 gem 'uglifier', '>= 1.3.0'
+gem 'simple-navigation'
+
+group :development do
+  gem 'better_errors'
+end
 
 group :development, :test do
   gem 'byebug'
