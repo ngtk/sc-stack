@@ -14,7 +14,7 @@ group :development, :test do
   gem 'byebug'
   gem 'factory_girl'
   gem 'pry-rails'
-  gem 'rspec'
+  gem 'rspec-rails', '~> 3.0'
   gem 'spring'
   gem 'web-console', '~> 2.0'
 end
