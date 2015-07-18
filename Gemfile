@@ -45,6 +45,7 @@ group :development do
   gem 'better_errors'
   gem 'hirb'
   gem 'hirb-unicode'
+  gem 'view_source_map'
 end
 
 group :development, :test do
