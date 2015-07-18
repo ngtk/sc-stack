@@ -16,7 +16,10 @@ gem 'uglifier', '>= 1.3.0'
 gem 'simple-navigation'
 
 group :development do
+  gem 'annotate', '~> 2.6.10'
   gem 'better_errors'
+  gem 'hirb'
+  gem 'hirb-unicode'
 end
 
 group :development, :test do
