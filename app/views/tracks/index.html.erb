@@ -14,10 +14,10 @@
         </thead>
         <tbody>
           <% @tracks.each do |track| %>
-            <tr>
+            <%= content_tag :tr, class: 'track', 'data-stream-url' => track.stream_url, 'data-id' => track.id do %>
               <%= content_tag :td, track.user.username %>
               <%= content_tag :td, track.title %>
-            </tr>
+            <% end %>
           <% end %>
         </tbody>
       </table> 
