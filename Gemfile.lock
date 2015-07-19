@@ -171,8 +171,11 @@ GEM
     sdoc (0.4.1)
       json (~> 1.7, >= 1.7.7)
       rdoc (~> 4.0)
-    simple-navigation (4.0.3)
+    simple-navigation (3.14.0)
       activesupport (>= 2.3.2)
+    simple-navigation-bootstrap (1.0.2)
+      railties (>= 3.1)
+      simple-navigation (>= 3.7.0, < 4.0.0)
     simple_form (3.0.2)
       actionpack (~> 4.0)
       activemodel (~> 4.0)
@@ -234,6 +237,7 @@ DEPENDENCIES
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
   simple-navigation
+  simple-navigation-bootstrap
   simple_form
   spring
   therubyracer
