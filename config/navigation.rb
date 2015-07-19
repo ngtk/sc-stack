@@ -2,7 +2,13 @@ SimpleNavigation::Configuration.run do |navigation|
   navigation.items do |primary|
     primary.dom_class = 'nav navbar-nav'
 
-    primary.item :sign_in, 'Sign In', new_user_session_path
-    primary.item :sign_up, 'Sign Up', new_user_registration_path
+    # ログイン前
+    primary.item :sign_in, 'Sign In', new_user_session_path, unless: -> { user_signed_in? }
+    primary.item :sign_up, 'Sign Up', new_user_registration_path, unless: -> { user_signed_in? }
+
+    # ログイン後
+    primary.item :user, current_user.try(:name), edit_user_registration_path, if: -> { user_signed_in? } do |sub|
+      sub.item :logout, 'Logout', destroy_user_session_path, method: :delete
+    end
   end
 end
