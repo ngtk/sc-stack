@@ -28,6 +28,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'simple-navigation'
 gem 'simple-navigation-bootstrap'
 gem 'simple_form'
+gem 'omniauth-soundcloud', '~> 1.0.0'
 # T
 gem 'therubyracer'
 gem 'turbolinks'
@@ -50,8 +51,10 @@ group :development do
 end
 
 group :development, :test do
+  gem 'dotenv-rails'
   gem 'factory_girl'
   gem 'pry-rails'
+  gem 'pry-byebug'
   gem 'rspec-rails', '~> 3.0'
   gem 'spring'
   gem 'web-console', '~> 2.0'
