@@ -27,6 +27,7 @@ ActiveRecord::Schema.define(version: 20150718120456) do
     t.string   "last_sign_in_ip",        limit: 255
     t.string   "provider",               limit: 255
     t.string   "uid",                    limit: 255
+    t.string   "encrypted_token",        limit: 255
     t.datetime "created_at",                                      null: false
     t.datetime "updated_at",                                      null: false
   end

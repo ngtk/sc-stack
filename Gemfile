@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
 # A
+gem 'attr_encrypted'
 # B
 # C
 gem 'coffee-rails', '~> 4.1.0'
@@ -52,7 +53,7 @@ end
 
 group :development, :test do
   gem 'dotenv-rails'
-  gem 'factory_girl'
+  gem 'factory_girl_rails'
   gem 'pry-rails'
   gem 'pry-byebug'
   gem 'rspec-rails', '~> 3.0'

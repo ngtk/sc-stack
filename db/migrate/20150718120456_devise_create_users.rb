@@ -34,6 +34,7 @@ class DeviseCreateUsers < ActiveRecord::Migration
       # OmniAuth
       t.string :provider
       t.string :uid
+      t.string :encrypted_token
 
       t.timestamps null: false
     end
