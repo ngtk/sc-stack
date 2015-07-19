@@ -1,3 +1,18 @@
-// Place all the styles related to the tracks controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.track {
+  cursor: pointer
+}
+
+.control-panel {
+  position: fixed; 
+  bottom: 0;
+  margin: 0 5%;
+  width: 90%;
+
+  .btn-play {
+    float: left;
+  }
+  .progress-bar-wrapper {
+    margin-top: 8px;
+    margin-left: 36px;
+  }
+}

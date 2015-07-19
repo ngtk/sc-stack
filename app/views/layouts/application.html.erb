@@ -13,6 +13,7 @@
     <![endif]-->
 
     <%= stylesheet_link_tag "flatly", :media => "all" %>
+    <%= stylesheet_link_tag controller.controller_name %>
 
     <%= yield(:page_stylesheet) if content_for?(:page_stylesheet) %>
 
@@ -29,9 +30,7 @@
       </div>
     </div> <!-- /.navbar -->
 
-    <div class="container">
-      <%= yield %>
-    </div> <!-- /.container -->
+    <%= yield %>
 
     <!-- Javascripts
     ================================================== -->
