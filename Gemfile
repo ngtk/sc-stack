@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 # A
 gem 'attr_encrypted'
+gem 'activemodel-associations'
 # B
 # C
 gem 'coffee-rails', '~> 4.1.0'
@@ -19,6 +20,7 @@ gem 'jquery-rails'
 gem 'mysql2'
 # N
 # O
+gem 'omniauth-soundcloud', '~> 1.0.0'
 # P
 # Q
 # R
@@ -29,7 +31,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'simple-navigation'
 gem 'simple-navigation-bootstrap'
 gem 'simple_form'
-gem 'omniauth-soundcloud', '~> 1.0.0'
+gem 'soundcloud'
 # T
 gem 'therubyracer'
 gem 'turbolinks'

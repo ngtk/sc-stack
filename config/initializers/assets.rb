@@ -7,4 +7,4 @@ Rails.application.config.assets.version = '1.0'
 # Rails.application.config.assets.paths << Emoji.images_path
 
 # Precompile additional assets.
-Rails.application.config.assets.precompile += %w( flatly.css flatly.js )
+Rails.application.config.assets.precompile += %w( *.css *.js  )

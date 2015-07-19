@@ -7,6 +7,21 @@ class User < ActiveRecord::Base
 
   attr_encrypted :token, key: Rails.application.secrets.secret_key_base
 
+  def favorite_tracks(options)
+    options.reverse_merge!(user: self)
+    FavoriteTrack.where(options)
+  end
+
+  def soundcloud_client
+    hash =
+      {
+        client_id:     ENV['SOUNDCLOUD_CLIENT_ID'],
+        client_secret: ENV['SOUNDCLOUD_SECRET'],
+        access_token:  token
+      }
+    Soundcloud.new(hash)
+  end
+
   def self.from_omniauth(auth)
     where(provider: auth.provider, uid: auth.uid).first_or_create do |user|
       user.password = Devise.friendly_token[0,20]

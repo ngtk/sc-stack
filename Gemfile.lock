@@ -26,6 +26,10 @@ GEM
     activemodel (4.2.1)
       activesupport (= 4.2.1)
       builder (~> 3.1)
+    activemodel-associations (0.1.1)
+      activemodel (< 5)
+      activerecord (< 5)
+      activesupport (< 5)
     activerecord (4.2.1)
       activemodel (= 4.2.1)
       activesupport (= 4.2.1)
@@ -90,6 +94,13 @@ GEM
     hirb-unicode (0.0.5)
       hirb (~> 0.5)
       unicode-display_width (~> 0.1.1)
+    httmultiparty (0.3.16)
+      httparty (>= 0.7.3)
+      mimemagic
+      multipart-post
+    httparty (0.13.5)
+      json (~> 1.8)
+      multi_xml (>= 0.5.2)
     i18n (0.7.0)
     jbuilder (2.3.1)
       activesupport (>= 3.0.0, < 5)
@@ -114,6 +125,7 @@ GEM
       mime-types (>= 1.16, < 3)
     method_source (0.8.2)
     mime-types (2.6.1)
+    mimemagic (0.3.0)
     mini_portile (0.6.2)
     minitest (5.7.0)
     multi_json (1.11.2)
@@ -217,6 +229,10 @@ GEM
       actionpack (~> 4.0)
       activemodel (~> 4.0)
     slop (3.6.0)
+    soundcloud (0.3.1)
+      hashie
+      httmultiparty (>= 0.3)
+      httparty (>= 0.7.3)
     spring (1.3.6)
     sprockets (3.2.0)
       rack (~> 1.0)
@@ -258,6 +274,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  activemodel-associations
   annotate (~> 2.6.10)
   attr_encrypted
   better_errors
@@ -280,6 +297,7 @@ DEPENDENCIES
   simple-navigation
   simple-navigation-bootstrap
   simple_form
+  soundcloud
   spring
   therubyracer
   turbolinks
